@@ -6,7 +6,7 @@ import com.nbadraftws.entity.DraftPick;
 
 public interface DraftPickDAO {
 
-	public List<DraftPick> getAll();
+	public List<DraftPick> getAllPicks();
 	
 	public DraftPick findByRoundPick(int round, int pick);
 	
