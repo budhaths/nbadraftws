@@ -21,6 +21,7 @@ public class DraftPick {
 	@Column(name="playerid")
 	private String playerID;
 	
+	public DraftPick() {};
 	public DraftPick(int draftid, int round, int pick, String draftedTeam, String playerID) {
 		this.draftid = draftid;
 		this.round = round;

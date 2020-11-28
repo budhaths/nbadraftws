@@ -25,6 +25,9 @@ public class Player {
 	@Column(name="school_team")
 	private String schoolTeam;
 
+	public Player () {
+		
+	}
 	
 	public Player(int playerid, String firstName, String lastName, String position, String nationality,
 			String schoolTeam) {
