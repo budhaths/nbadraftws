@@ -42,8 +42,6 @@ public class DraftPickDAOImpl implements DraftPickDAO {
 	@Override
 	public List<DraftPick> getUndraftedPlayers() {
 		
-		List<DraftPickVO> finalUndraftedList;
-		
 		List<DraftPick> tempList = getRoundPickDetails(RestConstants.undraftedRound,RestConstants.undraftedPick);
 		return tempList;
 		

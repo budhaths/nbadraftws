@@ -84,11 +84,11 @@ public class DraftRestController {
 	@GetMapping ("/draftpick/undrafted")
 	public List<DraftPickVO> getUndraftedPicks(){
 		
-		List<DraftPickVO> finalUndraftedList=null;
+		List<DraftPickVO> finalUndraftedList = new ArrayList<DraftPickVO>();
 		List<DraftPick> draftPick= draftService.getUndraftedPlayers();
 			draftPick.forEach(dp -> {
 									  finalUndraftedList.add(
-											new DraftPickVO(dp,playerService.findByPlayerID(dp.getPlayerID())));
+											  					new DraftPickVO(dp,playerService.findByPlayerID(dp.getPlayerID())));
 			});
 		
 		return finalUndraftedList;
