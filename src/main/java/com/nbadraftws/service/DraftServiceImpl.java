@@ -35,6 +35,12 @@ public class DraftServiceImpl implements DraftService{
 		return draftPickDAO.findByRoundPick(round, pick);
 	}
 
+	@Override
+	public List<DraftPick> getUndraftedPlayers() {
+		// TODO Auto-generated method stub
+		return draftPickDAO.getUndraftedPlayers();
+	}
+
 	
 
 }
