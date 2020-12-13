@@ -36,11 +36,9 @@ public class DraftServiceImpl implements DraftService{
 	}
 
 	@Override
-	public List<DraftPick> getUndraftedPlayers() {
+	public  List<DraftPick> getUndraftedPlayers() {
 		// TODO Auto-generated method stub
 		return draftPickDAO.getUndraftedPlayers();
 	}
-
-	
 
 }
