@@ -1,4 +1,4 @@
-package com.nbadraftws.rest;
+package com.nbadraftws.controller;
 
 import java.util.ArrayList;
 import java.util.List;
