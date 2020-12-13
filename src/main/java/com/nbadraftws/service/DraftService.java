@@ -11,5 +11,7 @@ public interface DraftService {
 	
 	public DraftPick findByRoundPick(int round, int pick);
 	
+	public List<DraftPick> getUndraftedPlayers ();
+	
 	
 }

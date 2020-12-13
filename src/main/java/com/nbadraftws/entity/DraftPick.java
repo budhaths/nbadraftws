@@ -19,10 +19,10 @@ public class DraftPick {
 	private String draftedTeam;
 	
 	@Column(name="playerid")
-	private String playerID;
+	private int playerID;
 	
 	public DraftPick() {};
-	public DraftPick(int draftid, int round, int pick, String draftedTeam, String playerID) {
+	public DraftPick(int draftid, int round, int pick, String draftedTeam, int playerID) {
 		this.draftid = draftid;
 		this.round = round;
 		this.pick = pick;
@@ -62,11 +62,11 @@ public class DraftPick {
 		this.draftedTeam = draftedTeam;
 	}
 
-	public String getPlayerID() {
+	public int getPlayerID() {
 		return playerID;
 	}
 
-	public void setPlayerID(String playerID) {
+	public void setPlayerID(int playerID) {
 		this.playerID = playerID;
 	}
 	
